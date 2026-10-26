@@ -4,20 +4,30 @@
 a contract review, a research memo, or turning a large set of data into an Excel file. It works in any
 language — write in Dutch, French, Italian or anything else, and everything comes back in that language.
 
+## Why it helps
+
+Claude can only keep so much in mind in one chat. On a big job it starts to lose track of what you agreed,
+fills a gap with something that merely sounds right, or simply runs out of room before the work is done.
+
+large-task works around that by giving the job a **written memory**, much like a well-kept file you would
+hand to a colleague. The plan, what you agreed and every finding go into files in a folder, and Claude
+re-reads them at the start of every chat. So it works from the file rather than from what it happens to
+remember — and a job can run over as many chats as it needs.
+
 ## What it does
 
 - **Asks first.** It opens with seven to ten multiple-choice questions about what the work is for and what
   the result should look like, so it has the context it needs and the result fits what you actually need.
 - **Makes a plan, and saves it.** Before the real work starts it writes a plan to a file, and tells you
   whether the job fits in one chat or needs more.
-- **Works lean.** It reads long documents section by section rather than all at once, and works through the
-  plan one block at a time, so Claude's working memory goes on the work itself.
+- **Saves room.** It reads long documents section by section rather than all at once, and works through the
+  plan one block at a time, so the room Claude has in a chat goes on the work itself.
 - **Avoids made-up answers.** Every figure and finding is tied to the source it came from, and anything it
   cannot back up is marked `(verify)` rather than guessed. Before it hands over a review or an analysis, it
   checks each point against the sources it used, and only those. An Excel, Word or PowerPoint result also
   gets an automatic check of the file itself.
 - **Carries on across chats.** If a job needs more than one chat, each chat ends with a hand-off note in
-  your folder and a short prompt for the next one.
+  your folder and a short prompt for the next one, which starts by reading the note and the plan.
 
 ## How to use it
 
