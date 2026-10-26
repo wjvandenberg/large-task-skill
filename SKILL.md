@@ -3,7 +3,7 @@ name: large-task
 metadata:
   author: Wouter van den Berg <wouter@monteclima.com>
   linkedin: https://www.linkedin.com/in/wjvandenberg/
-  license: MIT, except references/source-check.md, which is AGPL-3.0 - see LICENSE.md
+  license: AGPL-3.0 - see LICENSE.md
 description: Runs a piece of work to a plan — sized with the user, planned together, a handoff written at every break between sessions, and picked up again when the user types continue, in any language. Use it of your own accord whenever the work plainly spans several sessions, and whenever the user asks for it, a one-session task included — by this name or by its name in their own language, such as grote taak (Dutch), grande tâche (French) or grande compito (Italian). In Claude Code, only when the user names it.
 ---
 
