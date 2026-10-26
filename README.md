@@ -1,48 +1,48 @@
-# large-task — a Claude skill for work that needs a plan
+# large-task — a Claude skill for bigger jobs
 
-**large-task** helps Claude carry a piece of work through from start to finish: a report, a review, a
-comparison, a piece of research. It works whether the job takes one chat or several. Claude asks its
-questions first, makes a plan with you, keeps its findings in files rather than in the chat, and when the
-work runs over several chats, leaves a note so the next chat can pick up exactly where this one stopped.
+**large-task** is a skill for Claude Cowork, Claude's desktop app, for jobs too big for a quick answer:
+a contract review, a research memo, or turning a large set of data into an Excel file. It works in any
+language — write in Dutch, French, Italian or anything else, and everything comes back in that language.
 
-It works in any language. Write to Claude in Dutch, French, Italian or anything else, and the questions,
-the plan and the files come back in that language.
+## What it does
 
-## What it does for you
+- **Asks first.** It opens with seven to ten multiple-choice questions about what the work is for and what
+  the result should look like, so it has the context it needs and the result fits what you actually need.
+- **Makes a plan, and saves it.** Before the real work starts it writes a plan to a file, and tells you
+  whether the job fits in one chat or needs more.
+- **Works lean.** It reads long documents section by section rather than all at once, and works through the
+  plan one block at a time, so Claude's working memory goes on the work itself.
+- **Avoids made-up answers.** Every figure and finding is tied to the source it came from, and anything it
+  cannot back up is marked `(verify)` rather than guessed. Before it hands over a review or an analysis, it
+  checks each point against the sources it used, and only those. An Excel, Word or PowerPoint result also
+  gets an automatic check of the file itself.
+- **Carries on across chats.** If a job needs more than one chat, each chat ends with a hand-off note in
+  your folder and a short prompt for the next one.
 
-- **Asks before it starts.** About seven to ten multiple-choice questions on what the work is for, what the
-  result should look like and how it will be judged, so you don't get a long answer to the wrong question.
-- **Plans with you.** It writes the plan down and tells you whether the job fits in one chat or needs more.
-- **Keeps the work in files.** The plan, the research and the result go into files. Nothing important lives
-  only in the chat.
-- **Checks its own work.** It runs real checks before calling anything done, and marks anything uncertain as
-  `(verify)` instead of guessing.
-- **Picks up where it left off.** At the end of a chat it hands you a short prompt for the next one. Type
-  `continue` (or `verder`, `continuer`, `continua`) and it carries on.
+## How to use it
+
+In Cowork, start a chat and write *"Use the large-task skill to…"* followed by the task:
+
+> Use the large-task skill to review these three supplier contracts on price, liability and termination.
+
+It also answers to its name in your language: **grote taak** (Dutch), **grande tâche** (French),
+**grande compito** (Italian).
+
+**To carry on in a new chat,** type `continue` — or `verder`, `continuer`, `continua` — or paste the prompt
+the previous chat gave you.
+
+A job that runs over several chats needs a folder on your computer, linked to the chat, so the next chat can
+find the plan and the notes. The skill asks for one. A job that fits in one chat can do without.
 
 ## Install it
 
 1. **Download** `large-task.zip` from the [latest release](../../releases/latest). Don't unzip it.
 2. **Upload it in Claude:** open Claude's settings for skills and upload the zip.
-3. **Optional, but it helps:** the first time you use it, the skill offers you one line to paste into
-   **Settings → Account → Instructions for Claude**, in your own language. With it, Claude recognises this
-   kind of work in a new chat without being told. Skipping it is fine.
+3. **Optional:** the first time you use it, the skill offers one line to paste into
+   **Settings → Account → Instructions for Claude**. With it, Claude picks the skill up in a new chat without
+   being told. Skipping it is fine.
 
-## Use it
-
-Start a chat and name the skill, then describe the work:
-
-> Use large-task: compare these three supplier contracts on price, liability and termination.
-
-It also answers to its name in your language, such as **grote taak** (Dutch), **grande tâche** (French) or
-**grande compito** (Italian).
-
-- **A job that fits in one chat** needs no folder. Claude works in the chat and gives you the result at the
-  end, to save wherever you like.
-- **A bigger job** needs a folder on your computer, linked to the chat, so the next chat can find the plan
-  and the notes. The skill asks for it, and recommends one in any case.
-
-It is made for Claude's desktop app (Cowork). In Claude Code it runs only when you name it.
+In Claude Code the skill runs only when you name it.
 
 ## Licence
 
